@@ -1,0 +1,44 @@
+﻿<Window x:Class="Log_Application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Log_Application"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFE5DFC7">
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="68,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Name: "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="68,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Phone No."/><Run Text=": "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="68,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Delivery Date"/><Run Text=": "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="68,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Text="Order "/><Run Text="Completion"/><Run Language="en-in" Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="68,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Payment Status"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="460,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Products"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="68,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Message"/><Run Text=":"/></TextBlock>
+        <Button Content="Save" HorizontalAlignment="Left" Height="22" Margin="454,358,0,0" VerticalAlignment="Top" Width="67" FontFamily="Bell MT" FontSize="14" FontWeight="Bold" FontStyle="Italic" Background="#FFCBBFBB"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Height="22" Margin="297,358,0,0" VerticalAlignment="Top" Width="68" FontFamily="Bell MT" FontSize="14" FontWeight="Bold" FontStyle="Italic" Background="#FFCBBFBB"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="258,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" BorderBrush="Black"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="258,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" BorderBrush="Black"/>
+        <DatePicker HorizontalAlignment="Left" Height="26" Margin="258,162,0,0" VerticalAlignment="Top" Width="151">
+            <DatePicker.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+                    <GradientStop Color="#FFA3AEB9"/>
+                    <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                    <GradientStop Color="#FF718597" Offset="0.375"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </DatePicker.BorderBrush>
+        </DatePicker>
+        <RadioButton Content="Yes" HorizontalAlignment="Left" Height="26" Margin="258,193,0,0" VerticalAlignment="Top" Width="75"/>
+        <RadioButton Content="No" HorizontalAlignment="Left" Height="26" Margin="333,193,0,0" VerticalAlignment="Top" Width="76"/>
+        <RadioButton Content="Yes" HorizontalAlignment="Left" Height="26" Margin="258,224,0,0" VerticalAlignment="Top" Width="75"/>
+        <RadioButton Content="No" HorizontalAlignment="Left" Height="26" Margin="333,224,0,0" VerticalAlignment="Top" Width="76"/>
+        <TextBox HorizontalAlignment="Left" Margin="258,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Height="64" BorderBrush="Black"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="460,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" BorderBrush="Black"/>
+        <Button Content="Add" HorizontalAlignment="Left" Height="22" Margin="672,101,0,0" VerticalAlignment="Top" Width="67" FontFamily="Bell MT" FontSize="14" FontWeight="Bold" FontStyle="Italic" Background="#FFCBBFBB"/>
+        <DataGrid HorizontalAlignment="Left" Height="150" Margin="531,130,0,0" VerticalAlignment="Top" Width="175" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="460,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Cost"/><Run Text=":"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="531,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Center" Height="54" Margin="0,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" FontFamily="Freestyle Script" FontSize="60" FontWeight="Bold" TextAlignment="Center"><Run Text="Past"/><Run Language="en-in" Text="r"/><Run Text="ious"/></TextBlock>
+
+    </Grid>
+</Window>
