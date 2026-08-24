@@ -25,18 +25,34 @@ namespace Log_Application
             products.Add(new Product
             {
                 Name = "Chocolate Cake",
-                Quantity = 2,
+                Quantity = 0,
                 Price = 800
             });
 
             products.Add(new Product
             {
                 Name = "Brownie",
-                Quantity = 3,
+                Quantity = 0,
                 Price = 100
             });
 
             ProductDataGrid.ItemsSource = products;
+        }
+
+        private void AddProductButton_Click(object sender, RoutedEventArgs e)
+        {
+            string name = NewItem.Text;
+        }
+
+        private void IncreaseQuantity_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+
+            Product product = (Product)button.DataContext;
+
+            product.Quantity++;
+
+            ProductDataGrid.Items.Refresh();
         }
     }
 }
