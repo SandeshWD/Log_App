@@ -54,5 +54,18 @@ namespace Log_Application
 
             ProductDataGrid.Items.Refresh();
         }
+        private void DecreaseQuantity_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+
+            Product product = (Product)button.DataContext;
+
+            if (product.Quantity >= 1)
+            {
+                product.Quantity--;
+            }
+
+            ProductDataGrid.Items.Refresh();
+        }
     }
 }

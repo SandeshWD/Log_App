@@ -54,7 +54,8 @@
 
                                 <Button Content="−"
                                 Width="25"
-                                Height="25"/>
+                                Height="25"
+                                Click="DecreaseQuantity_Click"/>
 
                                 <TextBlock Text="{Binding Quantity}"
                                    Width="30"
