@@ -12,7 +12,7 @@
         <TextBlock HorizontalAlignment="Left" Height="21" Margin="68,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Delivery Date"/><Run Text=": "/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="25" Margin="68,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Text="Order "/><Run Text="Completion"/><Run Language="en-in" Text=":"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="25" Margin="68,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Payment Status"/><Run Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="25" Margin="442,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Products"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="442,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Products"/><Run Text=":"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="24" Margin="68,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Message"/><Run Text=":"/></TextBlock>
         <Button Content="Save" HorizontalAlignment="Left" Height="22" Margin="436,358,0,0" VerticalAlignment="Top" Width="67" FontFamily="Bell MT" FontSize="14" FontWeight="Bold" FontStyle="Italic" Background="#FFCBBFBB"/>
         <Button Content="Reset" HorizontalAlignment="Left" Height="22" Margin="297,358,0,0" VerticalAlignment="Top" Width="68" FontFamily="Bell MT" FontSize="14" FontWeight="Bold" FontStyle="Italic" Background="#FFCBBFBB"/>
@@ -34,11 +34,11 @@
         <RadioButton Content="No" HorizontalAlignment="Left" Height="26" Margin="333,224,0,0" VerticalAlignment="Top" Width="76"/>
         <TextBox HorizontalAlignment="Left" Margin="258,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Height="64" BorderBrush="Black"/>
         <TextBox x:Name="NewItem" HorizontalAlignment="Left" Height="26" Margin="439,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" BorderBrush="Black"/>
-        <Button x:Name="AddProductButton" Content="Add New Product" HorizontalAlignment="Left" Height="22" Margin="613,101,0,0" VerticalAlignment="Top" Width="108" FontFamily="Bell MT" FontSize="14" FontWeight="Bold" FontStyle="Italic" Background="#FFCBBFBB" Click="AddProductButton_Click"/>
+        <Button x:Name="AddProductButton" Content="Add New Product" HorizontalAlignment="Left" Height="22" Margin="620,132,0,0" VerticalAlignment="Top" Width="108" FontFamily="Bell MT" FontSize="14" FontWeight="Bold" FontStyle="Italic" Background="#FFCBBFBB" Click="AddProductButton_Click"/>
         <DataGrid x:Name="ProductDataGrid"
           AutoGenerateColumns="False"
           CanUserAddRows="False"
-          Margin="512,129,51,154">
+          Margin="512,186,51,160">
 
             <DataGrid.Columns>
 
@@ -83,6 +83,7 @@
         <TextBlock HorizontalAlignment="Left" Height="25" Margin="442,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" FontFamily="Freestyle Script" FontSize="20" FontWeight="Bold"><Run Language="en-in" Text="Cost"/><Run Text=":"/></TextBlock>
         <TextBox HorizontalAlignment="Left" Height="26" Margin="513,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" BorderBrush="Black"/>
         <TextBlock HorizontalAlignment="Center" Height="54" Margin="0,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" FontFamily="Freestyle Script" FontSize="60" FontWeight="Bold" TextAlignment="Center"><Run Text="Past"/><Run Language="en-in" Text="r"/><Run Text="ious"/></TextBlock>
+        <TextBox x:Name="PriceTextBox" HorizontalAlignment="Left" Height="26" Margin="439,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" BorderBrush="Black"/>
 
     </Grid>
 </Window>

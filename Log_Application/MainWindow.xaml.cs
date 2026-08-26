@@ -42,6 +42,7 @@ namespace Log_Application
         private void AddProductButton_Click(object sender, RoutedEventArgs e)
         {
             string name = NewItem.Text;
+            decimal price = decimal.Parse(PriceTextBox.Text);
         }
 
         private void IncreaseQuantity_Click(object sender, RoutedEventArgs e)
